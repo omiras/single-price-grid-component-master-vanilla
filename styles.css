@@ -57,11 +57,11 @@
   }
 
   /** Section Suscription */
-  .section-suscription {
+  .section-subscription {
     background-color: var(--first-primary);
   }
 
-  .section-suscription__title {
+  .section-subscription__title {
     color: white;
     font-weight: 700;
     font-size: 1.3rem;
@@ -78,11 +78,11 @@
     font-size: 0.8rem;
   }
 
-  .section-suscription__information {
+  .section-subscription__information {
     color: white;
   }
 
-  .section-suscription__signup {
+  .section-subscription__signup {
     background-color: var(--second-primary);
     color: white;
     padding: 1rem 3rem;
