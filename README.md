@@ -13,8 +13,9 @@
 ## Iteración 2
 
 - Dibuja las "cajitas" de la versión móvil. 
+- Crea toda la estructura HTML necesaria. No hay demasiado contexto semántico, así que no te centres en ello, tan solo usa tags semánticos evidentes. Puedes utilizar una aproximación de la metodología BEM
 - Vamos a implementar está solución usando un [**grid**](https://www.w3schools.com/css/css_grid_container.asp) para separar las diferentes secciones
-- Crea toda la estructura HTML necesaria. No hay demasiado contexto semántico, así que no te centres en ello, tan solo usa tags semánticos evidentes
+- Podéis hacer un efecto al pasar el ratón por encima del botón de "Sign Up" para que se intercambien los colroes de fondo y de letra.
 
 ## Iteración 3
 
