@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --light-gray: hsl(204, 43%, 93%);
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --light-cyan: hsla(179, 62%, 43%, 0.699);
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin: 1rem;
+    border-radius: 16px;
+}
+
+.section>div {
+    padding: 1rem;
+}
+
+
+.section-join {
+    background-color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.section-join>* {
+    margin-top: 1rem;
+}
+
+.section-join__title {
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+.section-join__message {
+    color: var(--bright-yellow);
+}
+
+.section-join__description {
+    color: var(--grayish-blue)
+}
+
+/** Monthly subscription */
+
+.section-subscription {
+    background-color: var(--cyan);
+}
+
+.section-subscription__title {
+    color: white;
+}
+
+.plan-price {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.section-subscription__plan {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.plan-duration {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-subscription__information {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
+
+}
+
+.section-subscription__signup {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+
+    background-color: var(--bright-yellow);
+    padding: 8px;
+    text-align: center;
+    font-size: 700;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+/** WhyUs*/
+
+.section-whyus {
+    background-color: var(--light-cyan);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.section-whyus__title {
+    color: white;
+}
+
+.section-whyus__benefits {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+/** Crear una media query para que cuando lleguemos a un mínimo de 600px de viewport, el .section se convierte en 1 frid de 2 filas y 2 columnas. La primera fila debe ocupar 2 columnas, usando la propiedad grid-column adecuadamente. Repasad los ejemplos de grid del repo de clase de ejemplos. También tenemos que ajustar en esta media query los border-radius !! */
+@media (min-width: 600px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 250px;
+        max-width: 680px;
+    }
+
+    .section-subscription {
+        border-bottom-left-radius: 16px;
+    }
+
+    .section-join {
+        grid-column: 1 / 3;
+    }
+
+    .section-whyus {
+        border-bottom-left-radius: 0;
+    }
+
+
+}
