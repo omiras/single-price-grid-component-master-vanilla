@@ -21,6 +21,10 @@
     font-family: var(--font);
     background-color: var(--second-neutral);
     font-weight: 400;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .section {
@@ -29,7 +33,7 @@
     margin: 3rem;
   }
 
-  .section-join, .section-suscription, .section-whyus {
+  .section>div {
     padding: 2rem;
   }
 /** Section Join*/
@@ -94,7 +98,7 @@
     opacity: 0.8;
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 600px) {
 
     
   }
