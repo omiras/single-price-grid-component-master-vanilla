@@ -27,7 +27,7 @@ body {
     border-radius: 16px;
 }
 
-.section>div {
+div.section>div {
     padding: 1rem;
 }
 
