@@ -8,6 +8,7 @@
 - Define todas las [variables CSS](https://www.w3schools.com/css/css3_variables.asp) 
 - Establece el font-size del elemento **html**
 - Carga la fuente y los pesos especificados de la fuente de Google Karla y aplicala en todo el **body**
+- Para una mejor maquetació, aplica un reset CSS mínimo a los elementos más comunes [reset CSS](https://www.digitalocean.com/community/tutorials/css-minimal-css-reset)
 
 ## Iteración 2
 
