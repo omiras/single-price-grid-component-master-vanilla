@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --first-primary: hsl(179, 62%, 43%);
+    --second-primary: hsl(71, 73%, 54%);
+    --first-neutral: hsl(204, 43%, 93%);
+    --second-neutral:  hsl(218, 22%, 67%);
+    --font: "Karla", sans-serif;
+  }
+
+  html {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: var(--font);
+    background-color: var(--second-neutral);
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+  }
+
+  .section>div {
+    padding: 2rem;
+  }
+/** Section Join*/
+  .section-join {
+    background-color: white;
+  }
+
+  .section-join__title {
+    color: var(--first-primary);
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  .section-join__message {
+    color: var(--second-primary);
+    font-weight: 700;
+  }
+
+  .section-join__description {
+    color: var(--second-neutral);
+  }
+
+  /** Section Suscription */
+  .section-subscription {
+    background-color: var(--first-primary);
+  }
+
+  .section-subscription__title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  .plan-price {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  .plan-duration {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .section-subscription__information {
+    color: white;
+  }
+
+  .section-subscription__signup {
+    background-color: var(--second-primary);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    
+  }
+
+/** Section Why Us */
+  .section-whyus {
+    background-color:hsl(179,47%,52%);
+    opacity: 0.8;
+  }
+
+  @media only screen and (min-width: 600px) {
+
+    
+  }
