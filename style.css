@@ -17,8 +17,16 @@ body {
     font-style: normal;
 }
 
-.info {
+.card {
+    max-width: 400px;
+}
+
+.info,
+.plan {
     padding: 1rem;
+}
+
+.info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -41,3 +49,43 @@ body {
     line-height: 1.6;
 }
 
+.plan {
+    color: white; /* Lo pongo en el contenedor padre porque el color es una propiedad CSS que se hereda */
+    background-color: var(--primary-cyan);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.plan__title,
+.price__dollars {
+    font-weight: bold;
+}
+
+.plan__price {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.price__dollars {
+    font-size: 1.4rem;
+}
+
+.price__period {
+    color: var(--neutral-grayish-blue)
+}
+
+.plan__cta a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-yellow);
+    width: 90%; /* TODO: seguramente necesite otra cajita para que todo el contenido quede en un width concreto */
+    display: inline-block;
+    text-align: center;
+    padding: 12px 8px;
+    font-weight: bold;
+    border-radius: 8px;
+
+
+}
