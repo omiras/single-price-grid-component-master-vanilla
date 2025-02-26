@@ -9,7 +9,8 @@
 }
 
 html {
-    font-size: 16px;
+    /* La función clamp establece un font-size mínimo de 16px, deseado de 1.5% del tamaño del ancho del viewport, y como máximo, un 20% superior al tamaño de la letra establecido en el navegador Web */
+    font-size: clamp(16px, 1.5vw, 1.2rem);
 }
 
 body {
@@ -29,7 +30,8 @@ body {
 .info,
 .plan,
 .whyus {
-    padding: 2rem 1rem;
+    /* Hemos dejado el cálculo de paddings solo en la versión mobile. Al tener un font-size responsive usando la función clamp, este padding crecerá o decrecerá proporcionalmente al tamaño del viewport (en pantallas de móvil quieres un tamaño de letra menor, en pantallas de escritorio, quieres un tamaño de letra mayor, hasta un tope) */
+    padding: 2rem 1.5rem;
 }
 
 .info {
@@ -50,7 +52,7 @@ body {
 .info__policy {
     color: var(--primary-yellow);
     font-weight: bold;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 .info__description {
@@ -59,7 +61,8 @@ body {
 }
 
 .plan {
-    color: white; /* Lo pongo en el contenedor padre porque el color es una propiedad CSS que se hereda */
+    color: white;
+    /* Lo pongo en el contenedor padre porque el color es una propiedad CSS que se hereda */
     background-color: var(--primary-cyan);
     display: flex;
     flex-direction: column;
@@ -121,3 +124,26 @@ body {
     color: var(--neutral-gray);
 }
 
+@media (min-width: 600px) {
+    .card {
+        /* Añadir propiedades */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+
+    }
+
+    
+
+    .plan {
+        border-bottom-left-radius: 8px;
+    }
+
+    .whyus {
+        border-bottom-left-radius: 0px;
+    }
+
+    .info {
+        grid-column: span 2;
+    }
+}
