@@ -2,6 +2,7 @@
 
 :root {
     --primary-cyan: hsl(179, 62%, 43%);
+    --primary-light-cyan: hsla(179, 62%, 43%, 0.7);
     --primary-yellow: hsl(71, 73%, 54%);
     --neutral-gray: hsl(204, 43%, 93%);
     --neutral-grayish-blue: hsl(218, 22%, 67%);
@@ -15,21 +16,29 @@ body {
     font-family: "Karla", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--neutral-gray);
 }
 
 .card {
-    max-width: 400px;
+    max-width: 355px;
 }
 
 .info,
-.plan {
-    padding: 1rem;
+.plan,
+.whyus {
+    padding: 2rem 1rem;
 }
 
 .info {
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .info__title {
@@ -69,23 +78,46 @@ body {
 }
 
 .price__dollars {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .price__period {
-    color: var(--neutral-grayish-blue)
+    color: var(--neutral-gray)
+}
+
+.plan__cta {
+    margin-top: 1rem;
 }
 
 .plan__cta a {
     text-decoration: none;
     color: white;
     background-color: var(--primary-yellow);
-    width: 90%; /* TODO: seguramente necesite otra cajita para que todo el contenido quede en un width concreto */
     display: inline-block;
+    width: 90%;
     text-align: center;
     padding: 12px 8px;
     font-weight: bold;
     border-radius: 8px;
+}
 
+/* Why Us section */
+
+.whyus {
+    background-color: var(--primary-light-cyan);
+    color: white;
+    line-height: 1.6;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 
 }
+
+.whyus__title {
+    font-weight: bold;
+}
+
+.whyus__benefits {
+    margin-top: 1rem;
+    color: var(--neutral-gray);
+}
+
